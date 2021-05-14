@@ -30,4 +30,4 @@ Useful Links
 - https://community.powerbi.com/t5/Data-Stories-Gallery/bd-p/DataStoriesGallery
 - https://github.com/PowerBi-Projects/PowerBI-visuals/
 - https://docs.microsoft.com/en-us/power-bi/developer/visuals/utils-formatting
-- https://powerbi.microsoft.com/en-us/blog/tag/release-notes/
+- https://powerbi.microsoft.com/en-us/blog/
