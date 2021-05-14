@@ -1,4 +1,4 @@
-Source: https://www.sqlbi.com/articles/using-generate-and-row-instead-of-addcolumns-in-dax/  
+Source: https://www.sqlbi.com/articles/using-generate-and-row-instead-of-addcolumns-in-dax/  with some additions
 What: favourite date table for PBI
 ```
 01DateTable =
@@ -19,7 +19,8 @@ RETURN
             "Month Number", MonthNumber,
             "Month", MonthName,
             "Year Month Number", YearMonthNumber,
-            "Year Month", YearMonthName
+            "Year Month", YearMonthName,
+            "IsWeekend", WEEKDAY( BaseDate, 2) IN {6,7} //optional
         )
     )
 ```
