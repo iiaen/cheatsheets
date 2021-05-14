@@ -1,4 +1,4 @@
-Source: https://www.sqlbi.com/articles/using-generate-and-row-instead-of-addcolumns-in-dax/
+Source: https://www.sqlbi.com/articles/using-generate-and-row-instead-of-addcolumns-in-dax/  
 What: favourite date table for PBI
 ```
 01DateTable =
