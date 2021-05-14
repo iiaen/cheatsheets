@@ -24,3 +24,9 @@ RETURN
         )
     )
 ```
+
+Useful Links
+- https://www.daxformatter.com/
+- https://community.powerbi.com/t5/Data-Stories-Gallery/bd-p/DataStoriesGallery
+- https://github.com/PowerBi-Projects/PowerBI-visuals/
+- https://docs.microsoft.com/en-us/power-bi/developer/visuals/utils-formatting
