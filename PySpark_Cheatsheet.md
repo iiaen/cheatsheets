@@ -94,6 +94,11 @@ myDataDict = spark.sparkContext.broadcast(loadData()) # Broadcast var object
 
 ```
 
+Accumulators:
+```
+
+```
+
 
 ### Notes
 Difference between `orderBy` and `sort`
