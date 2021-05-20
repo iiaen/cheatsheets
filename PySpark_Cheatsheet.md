@@ -46,12 +46,26 @@ df.groupby("age").agg(func.round(func.avg("income"), 2)
 
 df.orderBy(func.desc("col"))
 
+df.first()
+
+df.join(df2, df1.id == df2.id)
+
 df.withColumn("newColumn", func.round(func.col("min(oldColume)") * 3.14, 2)
     
 df.show() # only shows top 20 rows
 results_df.show(results_df.count())
 
 ```
+
+functions
+```
+func.col
+func.split
+func.round
+func.size
+func.trim
+```
+
 
 Using UDFs:
 ```python
