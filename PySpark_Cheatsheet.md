@@ -57,8 +57,10 @@ results_df.show(results_df.count())
 
 ```
 
-functions
+Functions
 ```
+from pyspark.sql import functions as func
+
 func.col
 func.split
 func.round
@@ -96,7 +98,12 @@ myDataDict = spark.sparkContext.broadcast(loadData()) # Broadcast var object
 
 Accumulators:
 ```
+from pyspark import SparkConf, SparkContext
 
+conf = SparkConf().setMaster("local").setAppName("ExampleApp")
+sc = SparkContext(conf = conf)
+
+hitCounter = sc.accumulator(0)
 ```
 
 
