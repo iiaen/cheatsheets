@@ -54,8 +54,9 @@ results_df.show(results_df.count())
 
 ### Notes
 Difference between `orderBy` and `sort`
-> They are NOT the SAME.
+> They are NOT the SAME.  
 The SORT BY clause is used to return the result rows sorted within each partition in the user specified order. When there is more than one partition SORT BY may return result that is partially ordered.  
 Reference :https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select-sortby.html  
 The ORDER BY clause is used to return the result rows in a sorted manner in the user specified order. Unlike the SORT BY clause, this clause guarantees a total order in the output.  
-Reference : https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select-orderby.html
+Reference : https://spark.apache.org/docs/latest/sql-ref-syntax-qry-select-orderby.html  
+Source: https://stackoverflow.com/questions/40603202/what-is-the-difference-between-sort-and-orderby-functions-in-spark
