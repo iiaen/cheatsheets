@@ -34,7 +34,7 @@ df = spark.read.schema(schema).csv("file:///dir/filename.csv")
 ```
 
 Common df methods
-```
+```python
 df.printSchema()
 
 df.select("col1", "col2")
@@ -44,6 +44,9 @@ df.filter(df.colname != '')
 df.groupby("age").agg(func.round(func.avg("income"), 2)
     .alias("avg_income")).sort("age").show()
     
-.show()
+df.withColumn("newColumn", func.round(func.col("min(oldColume)") * 3.14, 2)
+    
+df.show() # only shows top 20 rows
+results_df.show(results_df.count())
 
 ```
