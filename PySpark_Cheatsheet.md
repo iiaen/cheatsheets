@@ -1,4 +1,4 @@
-Boilerplate
+Boilerplate starter code:
 
 ```python
 from pyspark.sql import SparkSession
@@ -14,14 +14,14 @@ spark = SparkSession.builder.appName("SomeName").getOrCreate()
 spark.stop()
 ```
 
-Reading from text files with headers
+Reading from text files with headers:
 ```python
 df = spark.read.option("sep", "\t").option("header", "true").option("inferSchema", "true")\
     .csv("file:///dir/filename.csv"
 ```
 
 
-Reading from text files with no headers
+Reading from text files with no headers:
 ```python
 schema = StructType([ \
                      StructField("stationID", StringType(), True), \
@@ -33,7 +33,7 @@ schema = StructType([ \
 df = spark.read.schema(schema).csv("file:///dir/filename.csv")
 ```
 
-Common df methods
+Common df methods:
 ```python
 df.printSchema()
 
@@ -43,11 +43,40 @@ df.filter(df.colname != '')
 
 df.groupby("age").agg(func.round(func.avg("income"), 2)
     .alias("avg_income")).sort("age").show()
-    
+
+df.orderBy(func.desc("col"))
+
 df.withColumn("newColumn", func.round(func.col("min(oldColume)") * 3.14, 2)
     
 df.show() # only shows top 20 rows
 results_df.show(results_df.count())
+
+```
+
+Using UDFs:
+```python
+def exampleUDF(x):
+    return x * 3.14
+
+mySparkUDF = func.udf(exampleUDF)
+
+df = df.withColumn("newColumn", mySparkUDF(func.col("someCol")))
+
+```
+
+Broadcast Variables:
+```python
+import codecs
+
+def loadData():
+    myDataDict = {}
+    with codecs.open(filePath, "r", encoding='ISO-8859-1', errors='ignore') as f:
+        for line in f:
+            fields = line.split('|')
+            myDataDict[int(fields[0])] = fields[1]
+    return myDataDict
+
+myDataDict = spark.sparkContext.broadcast(loadData()) # Broadcast var object
 
 ```
 
