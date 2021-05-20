@@ -54,8 +54,7 @@ results_df.show(results_df.count())
 
 ### Notes
 Difference between `orderBy` and `sort`
-> 
-They are NOT the SAME.
+> They are NOT the SAME.
 
 The SORT BY clause is used to return the result rows sorted within each partition in the user specified order. When there is more than one partition SORT BY may return result that is partially ordered.
 
