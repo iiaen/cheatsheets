@@ -34,6 +34,10 @@ schema = StructType([ \
 df = spark.read.schema(schema).csv("file:///dir/filename.csv")
 ```
 
+```python
+spark.createDataFrame( [[col2, col2]], my_schema)
+```
+
 Common df methods:
 ```python
 df.printSchema()
@@ -112,6 +116,7 @@ hitCounter = sc.accumulator(0)
 ### Notes
 - Web UI -> localhost:4040 
 - Large jobs: `PartitionBy()`
+- VectorAssembler()
 - Difference between `orderBy` and `sort`
 > They are NOT the SAME.  
 The SORT BY clause is used to return the result rows sorted within each partition in the user specified order. When there is more than one partition SORT BY may return result that is partially ordered.  
