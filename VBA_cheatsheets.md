@@ -2,8 +2,8 @@ https://stackoverflow.com/questions/1026483/is-there-a-way-to-crack-the-password
 
 64 bit
 
-Module1
-'''
+Module1  
+```
 Option Explicit
 
 Private Const PAGE_EXECUTE_READWRITE = &H40
@@ -87,13 +87,13 @@ ByVal lpDialogFunc As LongPtr, ByVal dwInitParam As LongPtr) As Integer
         Hook
     End If
 End Function
-'''
+```
 
 Module2
-'''
+```
 Sub unprotected()
     If Hook Then
         MsgBox "VBA Project is unprotected!", vbInformation, "*****"
     End If
 End Sub
-'''
+```
