@@ -16,7 +16,9 @@ https://public.tableau.com/app/profile/ken.flerlage/viz/AfghanGirlPieCharts/Afgh
 ## Profiles
 https://public.tableau.com/profile/technical.product.marketing#!/
 
-
-
 ## Formatting
 https://truecue.com/resources/blog/tableau-how-to-use-formatting-to-create-kpi-up-down-arrows-no-calculated-fields/
+
+# Extensions
+https://truecue.com/resources/blog/tableau-how-to-use-formatting-to-create-kpi-up-down-arrows-no-calculated-fields/
+https://tableau.github.io/extensions-api/docs/trex_create.html
