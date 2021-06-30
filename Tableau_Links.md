@@ -20,6 +20,7 @@ https://public.tableau.com/profile/technical.product.marketing#!/
 https://truecue.com/resources/blog/tableau-how-to-use-formatting-to-create-kpi-up-down-arrows-no-calculated-fields/
 https://www.compart.com/en/unicode/search?q=trend#characters
 https://encycolorpedia.com/
+https://www.sessions.edu/color-calculator/
 
 # Extensions
 https://truecue.com/resources/blog/tableau-how-to-use-formatting-to-create-kpi-up-down-arrows-no-calculated-fields/
